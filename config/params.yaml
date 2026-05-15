@@ -1,0 +1,17 @@
+# Focus Companion parameters
+
+attention_smoother:
+  window_size: 15
+
+state_judge:
+  ear_thresh: 0.21
+  pitch_down_thresh: 20.0
+  yaw_thresh: 25.0
+  drowsy_sec: 2.0
+  distract_sec: 4.0
+  absent_sec: 3.0
+
+response_manager:
+  cooldown_sec: 10.0
+  alert_distracted: "Hey, let's get back to work."
+  alert_drowsy: "You look tired. Take a short break."

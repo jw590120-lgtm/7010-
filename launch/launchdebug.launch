@@ -1,0 +1,13 @@
+<launch>
+  <include file="$(find focus_companion)/launch/focus_companion.launch"/>
+
+  <node name="rqt_graph" pkg="rqt_graph" type="rqt_graph" output="screen"/>
+
+  <node name="state_echo" pkg="rostopic" type="rostopic"
+        args="echo /attention/state" output="screen"/>
+
+  <node name="features_plot" pkg="rqt_plot" type="rqt_plot"
+        args="/attention/features_smooth/eye_aspect_ratio
+              /attention/features_smooth/head_pitch
+              /attention/features_smooth/head_yaw"/>
+</launch>
