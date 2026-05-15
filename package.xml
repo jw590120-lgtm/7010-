@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<package format="2">
+  <name>focus_companion</name>
+  <version>0.1.0</version>
+  <description>
+    Attention monitoring robot for Jupiter Robot Juno 2.
+    Detects focused/distracted/drowsy/absent states via MediaPipe
+    and provides selective audio feedback.
+  </description>
+
+  <maintainer email="your@email.com">Your Name</maintainer>
+  <license>MIT</license>
+
+  <buildtool_depend>catkin</buildtool_depend>
+
+  <build_depend>rospy</build_depend>
+  <build_depend>std_msgs</build_depend>
+  <build_depend>sensor_msgs</build_depend>
+  <build_depend>cv_bridge</build_depend>
+  <build_depend>message_generation</build_depend>
+
+  <exec_depend>rospy</exec_depend>
+  <exec_depend>std_msgs</exec_depend>
+  <exec_depend>sensor_msgs</exec_depend>
+  <exec_depend>cv_bridge</exec_depend>
+  <exec_depend>message_runtime</exec_depend>
+  <exec_depend>sound_play</exec_depend>
+
+</package>
